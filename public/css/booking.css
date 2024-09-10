@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #32a1c6; /* Soft blue background for the entire page */
+}
+
+header {
+    background-color: #a6ccf2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Booking Page Styles */
+.contact {
+    background-color: #66787b; /* White background for the form area */
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0056b3; /* Deep blue color for the heading */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Dark grey label color */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #007bff; /* Blue border color */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f0f9ff; /* Very light blue background color for inputs */
+    color: #333; /* Input text color */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0056b3; /* Darker blue border on focus */
+    background-color: #ffffff; /* White background on focus */
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button.cta-button {
+    background-color: #ff5722; /* Vibrant orange button color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+button.cta-button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+footer {
+    background-color: #333; /* Dark grey footer background color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

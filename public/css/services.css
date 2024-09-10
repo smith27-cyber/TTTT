@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #a5c9d5; /* Soft blue background for the entire page */
+    padding: 0; /* Removed padding from the body to avoid layout issues */
+}
+
+header {
+    background-color: #f1f5fa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #5b9fcf; /* Added a subtle border for visual separation */
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto; /* Ensures logo scales proportionately */
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive navigation for smaller screens */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    }
+
+    .main-nav ul li {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add space between items */
+    }
+}
+
+.container-nav {
+    max-width: 1200px; /* Adjusted width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Service section image styling */
+.service img {
+    max-width: 100%; /* Allow images to scale properly */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: fill;
+}
+
+/* Specific styling for service images */
+img {
+    width: 20%; /* Apply 20% width for specific elements only (e.g., service section images) */
+    max-width: 80px;
+    height: auto; /* Keep image proportions intact */
+}
