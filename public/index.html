@@ -10,7 +10,7 @@
   <header>
     <div class="container">
       <div class="logo">
-        <img src="images/logo.png" alt="Prestige Dental Clinic">
+        <img src="images/logo.jpeg" alt="Prestige Dental Clinic">
       </div>
       <nav class="main-nav">
         <ul>
@@ -79,11 +79,12 @@
     <div class="container">
         <h2>Share Your Experience</h2>
         <form action="https://formspree.io/f/your-form-id" method="POST">
+
+          <label for="testimonial-name">Your Name:</label>
+          <input type="text" id="testimonial-name" name="testimonial-name" required />
+
             <label for="testimonial-text">Your Testimonial:</label>
             <textarea id="testimonial-text" name="testimonial-text" required></textarea>
-
-            <label for="testimonial-name">Your Name:</label>
-            <input type="text" id="testimonial-name" name="testimonial-name" required />
 
             <button type="submit">Submit Testimonial</button>
         </form>
